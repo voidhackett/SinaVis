@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>微博热门话题可视化</title>
+    <!-- 引入 ECharts 文件 -->
+    <script src="./js/echarts.js"></script>
+    <script src="./js/worldcloud.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/china.js"></script>
+    <script src="./js/jquery-3.1.1.min.js"></script>   
+    <script src="./data/map.js"></script>
+    <script src="./data/fog.js"></script>
+</head>
+<body>
+    <div id="search" class="section">
+        <form class="content">
+	        <h2>微博热门话题可视化</h2>
+		    <input class="search-text" id="search-text" type="text" placeholder="请输入想要了解的热门话题" maxlength="50">
+		    <input type="button" class="search-btn" value="搜索" onclick="search()">
+	    </form>
+    </div>
+    <div id="content">
+        <div id="map" class="section"></div>
+        <div id="key_word" class="section"></div>
+        <div id="trend" class="section"></div>
+    </div>  
+
+    <script src="./js/index.js"></script>    
+</body>
+</html>
